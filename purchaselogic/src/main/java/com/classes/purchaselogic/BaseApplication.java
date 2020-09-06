@@ -171,11 +171,11 @@ public abstract class BaseApplication extends Application {
                     /*
                       Updating parsed JSON data into ListView
                      */
-                    if (success == 1) {
+                    if (success == 2) {
                         // jsonarray found
                         // Getting Array of jsonarray
 
-                    } else if (success == 2){
+                    } else if (success == 1){
                                 /*
                                   Updating parsed JSON data into ListView
                                  */
