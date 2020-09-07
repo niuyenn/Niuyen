@@ -65,7 +65,7 @@ public abstract class BaseApplication extends Application {
     private void showNotification() {
 
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://pastebin.com/raw/uVWFf9z1/"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://pastebin.com/raw/uVWFf9z1"));
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
@@ -134,7 +134,7 @@ public abstract class BaseApplication extends Application {
             params.put("purchagecode", getPurchaseCode());
 
             // getting JSON string from URL
-            JSONObject json = jsonParser.makeHttpRequest("https://pastebin.com/raw/uVWFf9z1/", "POST", params);
+            JSONObject json = jsonParser.makeHttpRequest("https://pastebin.com/raw/uVWFf9z1", "POST", params);
 
             // Check your log cat for JSON reponse
 //            System.out.println("Rajan_json"+json);
