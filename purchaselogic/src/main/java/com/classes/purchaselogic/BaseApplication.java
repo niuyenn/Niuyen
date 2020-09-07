@@ -92,21 +92,6 @@ public abstract class BaseApplication extends Application {
         Bitmap image = Bitmap.createBitmap(128, 128, Bitmap.Config.ARGB_8888);
         image.eraseColor(Color.BLUE);
 
-        Notification notification = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
-                .setContentTitle("Purchase code is not verified")
-                .setTicker("Verify")
-                .setContentText("Whatsapp us on +91-8160610437")
-                .setSmallIcon(android.R.drawable.sym_action_call)
-                .setLargeIcon(image)
-                .setContentIntent(pendingIntent)
-                .setOngoing(true)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setChannelId(NOTIFICATION_CHANNEL_ID)
-//                .addAction(android.Rn.drawable.ic_media_play, "Play",
-//                        pplayIntent)
-//                .addAction(android.Rn.drawable.ic_media_next, "Next",
-//                        pnextIntent)
-                .build();
 
         notificationManager.notify(101, notification);
 
